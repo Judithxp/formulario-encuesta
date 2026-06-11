@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <main>
+      <h1 id="title">Encuesta de programación</h1>
+      <p id="description">Cuéntanos como está siendo tu experiencia aprendiendo HTML</p>
+      <form id="survey-form">
+        <label id="name-label" for="name">Nombre:</label>
+        <input id="name" type="text" required placeholder="Escribe tu nombre"/>
+
+        <label id="email-label" for="email">Correo elctrónico:</label>
+        <input id="email" type="email" required placeholder="ejemplo@correo.com"/>
+
+        <label id="number-label" for="number">Edad (Opcional):</label>
+        <input id="number" type="number" min="10" max="100" placeholder="Ej:25"/>
+
+        <label for="dropdown">¿Cuál es tu nivel actual?</label>
+        <select id="dropdown">
+          <option value="principiante">Principiante</option>
+          <option value="intermedio">Intermedio</0ption>
+        </select>
+
+        <p>¿Te está gustando crear este proyecto?</p>
+        <label>
+          <input type="radio" name="gustar" value="sí"/>Sí, mucho
+        </label>
+        <label>
+          <input type="radio" name="gustar" value="no"/>No, me cuesta
+        </label>
+
+        <p>¿Qué herramientas usas para aprender? (Marca las que quieras)</p>
+        <label>
+          <input type="checkbox" value="ordenador"/>Mi ordenador portátil
+        </label>
+        <label>
+          <input type="checkbox" value="movil"/>El móvil o tablet
+        </label>
+        
+        <label for="comentarios">¿Quieres añadir algo más?</label>
+        <textarea id="comentarios" placeholder="Escribe tus comentarios aquí..."></textarea>
+
+        <button id="submit" type="submit">Enviar Encuesta</button>
+
+      </form>
+    </main>
+  </body>
+</html>
